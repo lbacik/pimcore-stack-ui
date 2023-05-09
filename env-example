@@ -1,0 +1,37 @@
+
+PROJECT_NAME=
+
+# token is required for private repositories
+GIT_TOKEN=
+PROJECT_GIT_URL=https://git:${GIT_TOKEN}@github.com/...
+
+# pimcore install 
+DB_USER=
+DB_PASSWORD=
+DB_DATABASE=
+DB_HOST=db
+
+# up
+DOMAIN=
+NETWORK_NAME=
+DATABASE_URL=mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_DATABASE}
+IMAGE_NAME=${PROJECT_NAME}
+
+# database
+MYSQL_BACKUPS=
+MYSQL_ROOT_PASSWORD=
+
+# cron
+DOCKER_SOCKET=
+
+# pimcore
+CONFIG_LOCAL=/var/www/html/config/local
+ASSETS_PATH=/var/www/html/public/var
+VAR_CONFIG=/var/www/html/var/config
+VAR_LOG=/var/www/html/var/log
+VAR_VERSIONS=/var/www/html/var/versions
+VAR_EMAIL=/var/www/html/var/email
+
+# supervisord
+# ... TODO
+
